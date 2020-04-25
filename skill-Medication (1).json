@@ -1,0 +1,773 @@
+{
+  "intents": [
+    {
+      "intent": "medicines",
+      "examples": [
+        {
+          "text": "injections"
+        },
+        {
+          "text": "medicine"
+        },
+        {
+          "text": "capsules"
+        },
+        {
+          "text": "inhalers"
+        },
+        {
+          "text": "tablets"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "prevention",
+      "examples": [
+        {
+          "text": "prevention"
+        },
+        {
+          "text": "precautions"
+        },
+        {
+          "text": "covid"
+        },
+        {
+          "text": "preventive measures"
+        },
+        {
+          "text": "corona"
+        },
+        {
+          "text": "measures for corona"
+        },
+        {
+          "text": "measures for covid"
+        },
+        {
+          "text": "preventions"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "good evening"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "doctor",
+      "examples": [
+        {
+          "text": "health checkup"
+        },
+        {
+          "text": "doctor"
+        },
+        {
+          "text": "treatment"
+        },
+        {
+          "text": "consultation"
+        },
+        {
+          "text": "health care"
+        },
+        {
+          "text": "health emergency"
+        },
+        {
+          "text": "checkup"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-person",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "medicines",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Epogen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "isoniazid",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "rifampin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Singulair",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Crestor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Actos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "metacin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "paracetemol",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "insulin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Diabetes pills",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "atorvastatin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "aspirin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "lisinopril",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Leukotriene modifiers",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Theophylline",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Omalizumab",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Inhaled corticosteroids",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Long-acting beta agonists",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "albuterol",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ipratropium",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mepolizumab",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Benralizumab",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Reslizumab",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hygroton*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Diuril*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Esidrix*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hydrodiuril*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Microzide*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dyrenium*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lozol*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mykrox*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "aroxolyn*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Midamar*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Aldactone*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lasix*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bumex*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Moduretic*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dyazide*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Aldactazide*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Maxzide*",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "crocin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dolo650",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "azithromycin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "isradipine",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "glimepride",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "amlodipine",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "glipizide",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hydrocodone",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Generic Zocor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "glycomet gp2",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Generic Synthroid",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Generic Norvasc",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Generic Prilosec",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Amoxicillin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Generic Glucophage",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hydrochlorothiazide",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lipitor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Nexium",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Plavix",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Advair Diskus",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Abilify",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Seroquel",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "doctor",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "vasu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "akash",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "alekhya",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "bhuvan",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ansari",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "We can arrange an appointment with few doctors who are ready to offer service. Following are the doctors you can choose- Ansari, Bhuvan, Alekhya, Akash, Vasu"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587712315872",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1587712315896",
+      "previous_sibling": "handler_5_1587712315896"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1587712315872",
+      "context": {
+        "name": "@doctor"
+      },
+      "conditions": "@doctor",
+      "event_name": "input",
+      "dialog_node": "handler_5_1587712315896"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What do you want to order"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1587703375422",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1587703375443",
+      "previous_sibling": "handler_5_1587703375443"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1587703375422",
+      "context": {
+        "name": "@medicines"
+      },
+      "conditions": "@medicines",
+      "event_name": "input",
+      "dialog_node": "handler_5_1587703375443"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your appointment with @doctor has been booked"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1587712094697",
+      "conditions": "@doctor",
+      "dialog_node": "response_4_1587712314874",
+      "previous_sibling": "slot_8_1587712315872"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1587712094697",
+      "variable": "$name",
+      "dialog_node": "slot_8_1587712315872"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Your order for $name of quantity @sys-number is ordered successfull"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1587703206216",
+      "conditions": "@sys-number && $name!=\" \"",
+      "dialog_node": "response_8_1587703560431",
+      "previous_sibling": "response_8_1587703465796"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Your order for $name of quantity $number is ordered successfully"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1587703206216",
+      "conditions": "@medicines && $number!=\" \"",
+      "dialog_node": "response_8_1587703465796",
+      "previous_sibling": "response_1_1587703236908"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1587703206216",
+      "variable": "$number",
+      "dialog_node": "slot_3_1587703415937",
+      "previous_sibling": "slot_7_1587703375422"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your order for $name of quantity @sys-number is ordered successfully"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1587703206216",
+      "conditions": "@medicines && @sys-number",
+      "dialog_node": "response_1_1587703236908",
+      "previous_sibling": "slot_3_1587703415937"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1587703206216",
+      "variable": "$name",
+      "dialog_node": "slot_7_1587703375422"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please mention quantity"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1587703415937",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1587703415970",
+      "previous_sibling": "handler_8_1587703415970"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1587703415937",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_8_1587703415970"
+    },
+    {
+      "type": "standard",
+      "title": "prevention",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "To prevent the spread of COVID-19: Clean your hands often. Use soap and water, or an alcohol-based hand rub. Maintain a safe distance from anyone who is coughing or sneezing. Don’t touch your eyes, nose or mouth. Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze. Stay home if you feel unwell. If you have a fever, a cough, and difficulty breathing, seek medical attention. Call in advance. Follow the directions of your local health authority."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#prevention",
+      "dialog_node": "node_1_1587721739752",
+      "previous_sibling": "node_10_1587700446730"
+    },
+    {
+      "type": "frame",
+      "title": "medicines",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#medicines",
+      "dialog_node": "node_7_1587703206216",
+      "previous_sibling": "node_7_1587712094697"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_7_1587703206216",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "greeting",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello user"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#greeting",
+      "dialog_node": "node_10_1587700446730",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "doctor",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#doctor",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1587712094697",
+      "previous_sibling": "node_1_1587721739752"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Medication",
+  "language": "en",
+  "description": ""
+}
